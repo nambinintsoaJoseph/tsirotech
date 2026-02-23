@@ -1,7 +1,11 @@
+import Logo from "../../components/Logo";
+
 function Home() {
     return (
         <div>
-            <p>Home</p>
+           <header className="p-4">
+                <Logo />
+           </header>
         </div>
     )
 }

@@ -1,3 +1,11 @@
 @tailwind base; 
 @tailwind components; 
 @tailwind utilities; 
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./assets/fonts/Outfit-SemiBold.ttf') format('ttf');
+}
