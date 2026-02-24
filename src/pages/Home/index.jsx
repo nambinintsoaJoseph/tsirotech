@@ -1,11 +1,10 @@
-import Logo from "../../components/Logo";
+import Header from "../../components/Header";
+
 
 function Home() {
     return (
         <div>
-           <header className="p-4">
-                <Logo />
-           </header>
+            <Header />
         </div>
     )
 }
