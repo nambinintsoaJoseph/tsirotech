@@ -4,7 +4,7 @@ function NavbarIndex() {
 
     return (
         <div>
-            <ul className="flex space-x-16 mt-4">
+            <ul className="flex space-x-16 mt-4 font-inter">
                 {menu.map((menu_, index) => (
                     <li key={`menu-${index}`}>
                         {menu_}
