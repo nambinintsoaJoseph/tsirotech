@@ -4,6 +4,7 @@ import cover from '../../assets/img/cover_creer_compte.jpg';
 import Button from '../../components/Button';
 import services from '../../data/services';
 import Service from '../../components/Service';
+import menu_disponible from '../../data/menu_disponible';
 
 function Home() {
     return (
@@ -89,7 +90,7 @@ function Home() {
                     </p>
                 </div>
 
-                <div className="grid grid-rows-3 justify-items-center gap-y-11 mt-8 md:grid-cols-2 md:grid-rows-2 xl:grid-cols-3">
+                <div className="grid grid-rows-3 justify-items-center gap-y-11 mt-8 md:grid-cols-2 md:grid-rows-2 xl:grid-cols-3 xl:grid-rows-1">
                     {services.map((service, index) => (
                         <Service
                             key={`service-tsirotech-${index}`}
@@ -98,6 +99,44 @@ function Home() {
                             icon={service.icon}
                             content={service.content}
                         />
+                    ))}
+                </div>
+            </div>
+
+            {/* Menu disponible */}
+            <div className="mt-4">
+                <div>
+                    <h3 className="text-center p-4 font-outfit font-bold text-2xl lg:text-[32px]">
+                        Menu disponible
+                    </h3>
+
+                    <p className="font-inter text-sm text-center px-2 lg:text-base mt-4">
+                        Découvrez les différents catégories de recettes
+                        disponible sur TsiroTech et trouvez facilement le type
+                        de plat qui correspond à vos envies.
+                    </p>
+                </div>
+
+                <div className="mt-8 grid justify-items-center md:grid-cols-2 2xl:grid-cols-3">
+                    {menu_disponible.map((menu, index) => (
+                        <div
+                            key={`menuDispo-${index}`}
+                            className="w-[350px] mt-4"
+                        >
+                            <div>
+                                <img
+                                    src={menu.img}
+                                    alt={`TsiroTech - Menu disponible : ${menu.title}`}
+                                    className="w-[350px] h-[250px] rounded-2xl"
+                                />
+                            </div>
+                            <div>
+                                <h3 className="font-outfit font-bold text-[20px] text-center my-4">
+                                    {' '}
+                                    {menu.title}{' '}
+                                </h3>
+                            </div>
+                        </div>
                     ))}
                 </div>
             </div>
