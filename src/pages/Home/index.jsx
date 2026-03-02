@@ -2,6 +2,8 @@ import Header from '../../components/Header';
 import commencez from '../../assets/img/commencez_img.jpg';
 import cover from '../../assets/img/cover_creer_compte.jpg';
 import Button from '../../components/Button';
+import services from '../../data/services';
+import Service from '../../components/Service';
 
 function Home() {
     return (
@@ -70,6 +72,33 @@ function Home() {
                             icon={'fa-user-plus'}
                         />
                     </div>
+                </div>
+            </div>
+
+            {/* Services */}
+            <div>
+                <div>
+                    <h3 className="text-center p-4 font-outfit font-bold text-2xl lg:text-[32px]">
+                        Services
+                    </h3>
+
+                    <p className="font-inter text-sm text-center px-2 lg:text-base">
+                        Explorer une large collection de recettes innovantes
+                        proposées par la communauté et trouvez de nouvelles
+                        idées culinaire à tester.
+                    </p>
+                </div>
+
+                <div className="grid grid-rows-3 justify-items-center gap-y-11 mt-8 md:grid-cols-2 md:grid-rows-2 xl:grid-cols-3">
+                    {services.map((service, index) => (
+                        <Service
+                            key={`service-tsirotech-${index}`}
+                            title={service.title}
+                            cover={service.cover}
+                            icon={service.icon}
+                            content={service.content}
+                        />
+                    ))}
                 </div>
             </div>
         </div>
