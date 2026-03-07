@@ -17,8 +17,8 @@ function Login() {
                 </div>
             </header>
 
-            <div className="bg-tsirotech-background h-screen p-2">
-                <div className="mt-16 hidden lg:block">
+            <div className="bg-tsirotech-background  p-2 xl:flex h-[92vh] xl:justify-between">
+                <div className="mt-16 hidden xl:block xl:ml-20">
                     <AuthHero
                         img={berger}
                         title={'Rejoignez la'}
@@ -27,9 +27,9 @@ function Login() {
                     />
                 </div>
 
-                <div className="mt-[64px]">
+                <div className="mt-[64px] md:w-[486px] md:mx-auto xl:mx-0 xl:mt-28 xl:mr-20">
                     <div>
-                        <h3 className="font-outfit font-semibold text-[24px] text-center">
+                        <h3 className="font-outfit font-semibold text-[24px] text-center md:text-[32px]">
                             Connectez-vous !
                         </h3>
                     </div>
