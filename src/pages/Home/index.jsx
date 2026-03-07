@@ -140,6 +140,51 @@ function Home() {
                     ))}
                 </div>
             </div>
+
+            {/* Contactez-nous */}
+            <div className="mt-4 w-[345px] mx-auto md:w-[600px]">
+                <div>
+                    <h3 className="text-center mt-2 p-4 font-outfit font-bold text-2xl lg:text-[32px]">
+                        Conctactez-nous
+                    </h3>
+                </div>
+
+                <div>
+                    <p className="font-inter text-sm text-center px-2 lg:text-base my-4">
+                        Une question, une suggestion ou un besoin d'assistance ?
+                        N'hésitez pas à nous contacter, notre équipe vous
+                        répondra dans le plus brefs délais.
+                    </p>
+                </div>
+
+                <div>
+                    <form className="mt-8">
+                        <div className="flex flex-col">
+                            <label htmlFor="adresseEmail">
+                                Adresse email :
+                            </label>
+                            <input
+                                type="text"
+                                id="adresseEmail"
+                                className="p-2 border rounded-lg border-tsirotech-border outline-none"
+                            />
+                        </div>
+
+                        <div className="mt-4 flex flex-col">
+                            <label htmlFor="message">Message : </label>
+                            <textarea
+                                name="message"
+                                id="message"
+                                className="border border-tsirotech-border rounded-lg h-[152px] resize-none outline-none p-2"
+                            ></textarea>
+                        </div>
+
+                        <div className="mt-4 flex justify-end">
+                            <Button text={'Envoyer'} icon={'fa-paper-plane'} />
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     );
 }
