@@ -5,6 +5,7 @@ import Button from '../../components/Button';
 import services from '../../data/services';
 import Service from '../../components/Service';
 import menu_disponible from '../../data/menu_disponible';
+import Logo from '../../components/Logo';
 
 function Home() {
     return (
@@ -185,6 +186,51 @@ function Home() {
                     </form>
                 </div>
             </div>
+
+            {/* Footer */}
+            <footer className="mt-4 bg-tsirotech-footer grid grid-row-3 grid-cols-2 md:grid-rows-[1fr,60px] md:grid-cols-3">
+                <div className="col-span-2 mx-auto my-4 md:col-span-1 md:mt-16">
+                    <div className="bg-white w-fit">
+                        <Logo />
+                    </div>
+                </div>
+
+                <div className="col-span-2 flex justify-between px-6 py-2 md:col-span-2 md:justify-around md:pt-8">
+                    <div className="text-white">
+                        <div>
+                            <h3 className="font-outfit font-bold text-[20px]">
+                                Navigations
+                            </h3>
+                        </div>
+
+                        <div className="space-y-2">
+                            <p className="pt-2">Services</p>
+                            <p>Menu disponibles</p>
+                            <p>Contact</p>
+                        </div>
+                    </div>
+
+                    <div className="text-white space-y-2">
+                        <div>
+                            <h3 className="font-outfit font-bold text-[20px]">
+                                Action
+                            </h3>
+                        </div>
+
+                        <div className="space-y-2">
+                            <p>Se connecter</p>
+                            <p>S'inscrire</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-span-2 p-4 text-white md:col-span-3 md:h-fit md:pt-4">
+                    <p className="text-center">
+                        Tous droit réservés - TsiroTech
+                        {new Date().getUTCFullYear()}
+                    </p>
+                </div>
+            </footer>
         </div>
     );
 }
