@@ -6,7 +6,7 @@ import google from '../../assets/img/login/google.svg';
 
 function Login() {
     return (
-        <div>
+        <div className="h-screen flex flex-col">
             <header className="flex justify-between p-4">
                 <div>
                     <Logo />
@@ -17,7 +17,7 @@ function Login() {
                 </div>
             </header>
 
-            <div className="bg-tsirotech-background  p-2 xl:flex h-[92vh] xl:justify-between">
+            <div className="grow bg-tsirotech-background  p-2 xl:flex xl:justify-between">
                 <div className="mt-16 hidden xl:block xl:ml-20">
                     <AuthHero
                         img={berger}
