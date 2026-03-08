@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import AuthHero from '../../components/AuthHero';
 import Button from '../../components/Button';
 import Logo from '../../components/Logo';
@@ -9,11 +10,15 @@ function SignUp() {
         <div className="h-screen flex flex-col">
             <header className="flex justify-between p-4">
                 <div>
-                    <Logo />
+                    <Link to="/">
+                        <Logo />
+                    </Link>
                 </div>
 
                 <div>
-                    <Button text={'Se connecter'} icon={'fa-user'} />
+                    <Link to="/login">
+                        <Button text={'Se connecter'} icon={'fa-user'} />
+                    </Link>
                 </div>
             </header>
 
@@ -108,7 +113,11 @@ function SignUp() {
                         <div>
                             <p className="mt-4">
                                 Vous avez déjà un compte ?{' '}
-                                <span className="underline">Se connecter</span>
+                                <Link to="/login">
+                                    <span className="underline">
+                                        Se connecter
+                                    </span>
+                                </Link>
                             </p>
                         </div>
                     </div>

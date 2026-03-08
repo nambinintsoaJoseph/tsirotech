@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import AuthHero from '../../components/AuthHero';
 import Button from '../../components/Button';
 import berger from '../../assets/img/login/berger.png';
@@ -9,11 +10,15 @@ function Login() {
         <div className="h-screen flex flex-col">
             <header className="flex justify-between p-4">
                 <div>
-                    <Logo />
+                    <Link to="/">
+                        <Logo />
+                    </Link>
                 </div>
 
                 <div>
-                    <Button text={"S'inscrire"} icon={'fa-user-plus'} />
+                    <Link to="/signup">
+                        <Button text={"S'inscrire"} icon={'fa-user-plus'} />
+                    </Link>
                 </div>
             </header>
 
@@ -93,9 +98,11 @@ function Login() {
                         <div>
                             <p className="mt-4">
                                 Etes-vous nouveau ?{' '}
-                                <span className="underline">
-                                    Créer un compte
-                                </span>
+                                <Link to="/signup">
+                                    <span className="underline">
+                                        Créer un compte
+                                    </span>
+                                </Link>
                             </p>
                         </div>
                     </div>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
 import commencez from '../../assets/img/commencez_img.jpg';
 import cover from '../../assets/img/cover_creer_compte.jpg';
@@ -39,7 +40,9 @@ function Home() {
                         </div>
 
                         <div className="flex justify-center mt-4">
-                            <Button text={'Commencer'} icon={'fa-play'} />
+                            <Link to="/login">
+                                <Button text={'Commencer'} icon={'fa-play'} />
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -69,16 +72,18 @@ function Home() {
                     </div>
 
                     <div className="flex justify-center mt-4">
-                        <Button
-                            text={'Créer un compte'}
-                            icon={'fa-user-plus'}
-                        />
+                        <Link to="/signup">
+                            <Button
+                                text={'Créer un compte'}
+                                icon={'fa-user-plus'}
+                            />
+                        </Link>
                     </div>
                 </div>
             </div>
 
             {/* Services */}
-            <div>
+            <div id="services">
                 <div>
                     <h3 className="text-center p-4 font-outfit font-bold text-2xl lg:text-[32px]">
                         Services
@@ -105,7 +110,7 @@ function Home() {
             </div>
 
             {/* Menu disponible */}
-            <div className="mt-4">
+            <div className="mt-4" id="menu_dispo">
                 <div>
                     <h3 className="text-center p-4 font-outfit font-bold text-2xl lg:text-[32px]">
                         Menu disponible
@@ -143,7 +148,7 @@ function Home() {
             </div>
 
             {/* Contactez-nous */}
-            <div className="mt-4 w-[345px] mx-auto md:w-[600px]">
+            <div className="mt-4 w-[345px] mx-auto md:w-[600px]" id="contact">
                 <div>
                     <h3 className="text-center mt-2 p-4 font-outfit font-bold text-2xl lg:text-[32px]">
                         Conctactez-nous
@@ -167,7 +172,7 @@ function Home() {
                             <input
                                 type="text"
                                 id="adresseEmail"
-                                className="p-2 border rounded-lg border-tsirotech-border outline-none"
+                                className="p-2 border rounded-lg border-tsirotech-border outline-none mt-2"
                             />
                         </div>
 
@@ -176,7 +181,7 @@ function Home() {
                             <textarea
                                 name="message"
                                 id="message"
-                                className="border border-tsirotech-border rounded-lg h-[152px] resize-none outline-none p-2"
+                                className="border border-tsirotech-border rounded-lg h-[152px] resize-none outline-none p-2 mt-2"
                             ></textarea>
                         </div>
 
@@ -204,9 +209,15 @@ function Home() {
                         </div>
 
                         <div className="space-y-2">
-                            <p className="pt-2">Services</p>
-                            <p>Menu disponibles</p>
-                            <p>Contact</p>
+                            <p className="pt-2">
+                                <a href="#services">Services</a>
+                            </p>
+                            <p>
+                                <a href="#menu_dispo">Menu disponibles</a>
+                            </p>
+                            <p>
+                                <a href="#contact">Contact</a>
+                            </p>
                         </div>
                     </div>
 
@@ -218,8 +229,12 @@ function Home() {
                         </div>
 
                         <div className="space-y-2">
-                            <p>Se connecter</p>
-                            <p>S'inscrire</p>
+                            <p>
+                                <Link to="/login">Se connecter</Link>
+                            </p>
+                            <p>
+                                <Link to="/signup">S'inscrire</Link>
+                            </p>
                         </div>
                     </div>
                 </div>
