@@ -35,7 +35,7 @@ function Login() {
                     </div>
 
                     <div>
-                        <form className="mt-[32px] p-4">
+                        <form className="mt-[32px] space-y-4 p-4">
                             <div className="flex flex-col space-y-[8px]">
                                 <label htmlFor="email">Adresse email</label>
                                 <input
