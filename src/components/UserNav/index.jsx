@@ -24,7 +24,7 @@ function UserNav({ indexActiveMenu }) {
                 </div>
 
                 {/* Menu content (mobile and tablet) */}
-                <div className="lg:hidden">
+                <div className="pb-2 lg:hidden">
                     {isShow && (
                         <ul className="mt-2 w-fit mx-auto space-y-2">
                             {user_nav.map((nav, index) => (
