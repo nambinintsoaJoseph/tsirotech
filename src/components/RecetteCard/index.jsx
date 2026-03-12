@@ -10,9 +10,9 @@ function RecetteCard({
     description,
 }) {
     return (
-        <div className="w-[332px]">
+        <div className="w-[332px] md:w-[466px]">
             <div>
-                <div className="absolute p-4 w-[332px] flex justify-between">
+                <div className="absolute p-4 w-[332px] flex justify-between md:w-[466px]">
                     <p className="bg-tsirotech-background w-[126px] text-center h-8 rounded-[16px] pt-1">
                         {type}
                     </p>
@@ -25,14 +25,14 @@ function RecetteCard({
                     <img
                         src={photo_recette}
                         alt={`${titre}`}
-                        className="w-[332px] h-[208px] rounded-t-[16px]"
+                        className="w-[332px] h-[208px] rounded-t-[16px] md:w-[466px] md:h-[250px]"
                     />
                 </div>
             </div>
 
             <div className="px-4 border border-tsirotech-border rounded-b-[16px]">
                 <div>
-                    <h3 className="font-outfit font-bold text-[20px] text-center py-4">
+                    <h3 className="font-outfit font-bold text-[20px] text-center py-4 md:text-[24px]">
                         {titre}
                     </h3>
                 </div>
