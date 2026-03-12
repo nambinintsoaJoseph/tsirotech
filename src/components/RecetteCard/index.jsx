@@ -25,7 +25,7 @@ function RecetteCard({
                     <img
                         src={photo_recette}
                         alt={`${titre}`}
-                        className="w-[332px] h-[208px] rounded-t-[16px] md:w-[466px] md:h-[250px]"
+                        className="w-[332px] h-[208px] rounded-t-[16px] md:w-[466px] md:h-[310px]"
                     />
                 </div>
             </div>
