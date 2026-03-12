@@ -55,7 +55,7 @@ function UserNav({ indexActiveMenu }) {
                             {user_nav.map((nav, index) => (
                                 <li key={`nav-laptop-${index}`}>
                                     <i
-                                        className={`fa ${nav.icon} text-tsirotech-primary mt-8`}
+                                        className={`fa ${nav.icon} text-tsirotech-primary mt-6`}
                                     ></i>{' '}
                                     {nav.title}
                                 </li>
@@ -64,7 +64,7 @@ function UserNav({ indexActiveMenu }) {
                     </div>
 
                     {/* Disconnect link */}
-                    <div className="mt-8 mr-4">
+                    <div className="mt-6 mr-4">
                         <a>
                             <i className="fa fa-right-from-bracket text-tsirotech-primary"></i>{' '}
                             Déconnexion
