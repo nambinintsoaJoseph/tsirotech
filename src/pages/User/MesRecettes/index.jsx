@@ -8,7 +8,7 @@ function MesRecettes() {
     return (
         <div className="h-screen flex flex-col">
             <div>
-                <UserNav />
+                <UserNav indexActiveMenu={1} />
             </div>
 
             <div className="grow pt-4 bg-tsirotech-background">

@@ -57,7 +57,11 @@ function UserNav({ indexActiveMenu }) {
                                     <i
                                         className={`fa ${nav.icon} text-tsirotech-primary mt-6`}
                                     ></i>{' '}
-                                    {nav.title}
+                                    <span
+                                        className={`${indexActiveMenu == index + 1 && 'border-b-2 border-tsirotech-primary pb-1'}`}
+                                    >
+                                        {nav.title}
+                                    </span>
                                 </li>
                             ))}
                         </ul>
